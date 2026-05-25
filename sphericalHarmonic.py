@@ -31,7 +31,7 @@ def sphericalHarmonic(
         raise ValueError("Invalid grid size")
     
     # calculate associated legendre polynomial
-    P = lpmv(m, l, np.cos(phiGrid))
+    P = lpmv(abs(m), l, np.cos(phiGrid))
     
     # calculate azimuthal 
     if m == 0:
