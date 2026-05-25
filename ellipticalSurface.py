@@ -3,10 +3,13 @@ from beartype import beartype
 
 @beartype
 def ellipticalSurface(
-    a,b,c:   float|int, 
+    a: float | int,
+    b: float | int,
+    c: float | int,
     thetaGrid: np.ndarray, 
     phiGrid:   np.ndarray
     ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    
     """
     Plots a 3D parametric ellipsoid surface
 

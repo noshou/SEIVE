@@ -34,8 +34,8 @@ def mesh(
         raise ValueError("resolution must be > 0")
     
     # grid parameters
-    theta = np.linspace(0, thetaMax, 100)
-    phi   = np.linspace(0, phiMax,   100)
+    theta = np.linspace(0, thetaMax, resolution)
+    phi   = np.linspace(0, phiMax,   resolution)
     
     # mesh
     thetaGrid, phiGrid = np.meshgrid(theta, phi)
